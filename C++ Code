@@ -1,0 +1,42 @@
+#include <iostream>
+
+using namespace std;
+int main()
+{
+	
+	int number1, number2,choosenoperator, result;
+	cout << "Write First Number = ";
+	cin >> number1;
+	cout << "Write Second Number = ";
+	cin >> number2;
+	cout << "Which Transaction Do You Choose?(1:+ 2:- 3:* 4:/) = ";
+	cin >> choosenoperator;
+	cout << endl;
+
+	if (choosenoperator == 1)
+	{
+		result = number1 + number2;
+	}
+	else if (choosenoperator == 2) 
+	{
+		result = number1 - number2;
+	}
+	else if (choosenoperator == 3)
+	{
+		result = number1 * number2;
+	}
+	else if (choosenoperator == 4)
+	{
+		result = number1 / number2;
+	}
+	else
+	{
+		cout << "Please Select 1-4 Numbers" << endl;
+	}
+	cout << "Here is Your Result = " << result;
+	if (result == 0) 
+	{
+		cout << "UNDEFINED" << endl;
+	}
+
+return = 0;
